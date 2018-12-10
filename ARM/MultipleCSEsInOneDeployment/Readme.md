@@ -16,5 +16,7 @@ The second extension is called after 'FirstCSE' ("dependsOn": [            "Firs
 * **2 CSExtensions** (_01_CSE...,02_CSE..._) -> installiert und downloaded was in der VM
 * **1 Powershell deployment file** (_Deploy....ps1_) -> lädt die CSEs in einen Block Blob hoch und started das ARM Deployment
 
+![Deployment view in azure portal](https://github.com/bfrankMS/Azure/blob/master/ARM/MultipleCSEsInOneDeployment/DeployVMExtensions.PNG "Deployment view in azure portal")
+
 hth,
 B
