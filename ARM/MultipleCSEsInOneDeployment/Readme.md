@@ -13,8 +13,8 @@ Here is a sample of using a subtemplate "FirstCSE":
 * **1 ARM Template** (_DeployVMExtensions.json_):
 FirstCSE - calls the first custom script extension (after the VM has been created)
 The second extension is called after 'FirstCSE' ("dependsOn": [            "FirstCSE"    ])
-* **2 CSExtensions** (_01_CSE...,02_CSE..._) -> installiert und downloaded was in der VM
-* **1 Powershell deployment file** (_Deploy....ps1_) -> lädt die CSEs in einen Block Blob hoch und started das ARM Deployment
+* **2 CSExtensions** (_01_CSE...,02_CSE..._) -> 2 powershell scripts to install and downloads something in the VM
+* **1 Powershell deployment file** (_Deploy....ps1_) -> uploads the 2 PS-scripts to an azure blob storage (for the CSE to download from) and starts the deployment.
 
 ![Deployment view in azure portal](https://github.com/bfrankMS/Azure/blob/master/ARM/MultipleCSEsInOneDeployment/DeployVMExtensions.PNG "Deployment view in azure portal")
 
